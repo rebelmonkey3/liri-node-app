@@ -106,4 +106,5 @@ if(question === " do-what-it-says"){
 function outputText(){
         console.log(spotify.response + twitter.response + OMDB.response)
     }
+
 	
