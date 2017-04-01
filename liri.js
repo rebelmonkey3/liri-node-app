@@ -2,7 +2,7 @@
 // write the code you need to grab the data from keys.js. Then store the keys in a variable.
 
 var sourceFile = require('./keys.js');
-console.log(sourceFile.twitterKeys);
+// console.log(sourceFile.twitterKeys);
 
 var request = require('request')
 var fs = require('fs');
@@ -95,7 +95,13 @@ if(question === "movie-this"){
 }
 
 	//end of OMDB
+if(question === " do-what-it-says"){
 
+    fs.readFile('random.txt', "utf8", function(err, data){
+        console.log(data);
+    });
+    outputText(); 
+}
 
 function outputText(){
         console.log(spotify.response + twitter.response + OMDB.response)
